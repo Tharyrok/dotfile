@@ -95,5 +95,52 @@ su -l tharyrok
 curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash
 
 pacaur -S - < $(curl -s https://raw.githubusercontent.com/Tharyrok/dotfile/master/package_list.txt)
+```
 
+### Enable services
+
+```
+systemctl enable pcscd.socket
+systemctl enable lightdm.service
+```
+
+### Config OS
+```
+nano /etc/hostname
+nano /etc/hosts
+
+ln -s /usr/share/zoneinfo/Europe/Brussels /etc/localtime
+
+nano  /etc/locale.gen
+locale-gen
+
+echo KEYMAP=fr > /etc/vconsole.conf
+echo KEYMAP=be-latin1 > /etc/vconsole.conf
+
+nano /etc/mkinitcpio.conf
+HOOKS="base udev autodetect modconf keymap keyboard block lvm2 encrypt filesystems fsck"
+
+pacman -Rsn linux
+
+mkinitcpio -p linux-lts
+
+nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="cryptdevice=/dev/mapper/sys-lvroot:root"
+grub-mkconfig -o /boot/grub/grub.cf
+
+nano /etc/fstab
+# /dev/mapper/home
+/dev/mapper/home        /home           xfs             rw,relatime,attr2,inode64,noquota       0 2
+
+/dev/mapper/tmp         /tmp    tmpfs           defaults        0       0
+/dev/mapper/swap        none    swap            sw              0       0
+
+nano /etc/X11/xorg.conf.d/10-keyboard-layout.conf
+Section "InputClass"
+    Identifier         "Keyboard Layout"
+    MatchIsKeyboard    "yes"
+    Option             "XkbLayout"  "be"
+    Option             "XkbLayout"  "fr"
+    Option             "XkbVariant" "latin9" # accès aux caractères spéciaux plus logique avec "Alt Gr" (ex : « » avec "Alt Gr" w x)
+EndSection
 ```
