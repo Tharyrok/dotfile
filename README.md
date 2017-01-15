@@ -71,6 +71,13 @@ mkfs.xfs /dev/mapper/home
 mount /dev/mapper/home /home
 ```
 
+Add `/etc/crypttab`
+```
+swap	/dev/mapper/root-swap		/dev/urandom		swap,cipher=aes-xts-plain64,size=256
+tmp		/tmp/dev/mapper/root-tmp	/dev/urandom		tmp,cipher=aes-xts-plain64,size=256
+home	/dev/mapper/root-home		/etc/luks-keys/home
+```
+
 ### Créate environement
 ```
 
