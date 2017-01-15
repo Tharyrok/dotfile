@@ -7,3 +7,12 @@ tar xzf /tmp/archlinux-bootstrap.tar.gz
 
 /tmp/root.x86_64/bin/arch-chroot /tmp/root.x86_64/
 ```
+## Init chroot
+```
+pacman-key --init
+pacman-key --populate archlinux
+
+mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
+rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+```
