@@ -93,4 +93,7 @@ su -l tharyrok
 
 ```
 curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash
+
+pacaur -S - < $(curl -s https://raw.githubusercontent.com/Tharyrok/dotfile/master/package_list.txt)
+
 ```
