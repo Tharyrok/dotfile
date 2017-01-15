@@ -144,3 +144,8 @@ Section "InputClass"
     Option             "XkbVariant" "latin9" # accès aux caractères spéciaux plus logique avec "Alt Gr" (ex : « » avec "Alt Gr" w x)
 EndSection
 ```
+
+
+```
+wget https://github.com/Tharyrok/dotfile/archive/master.zip -O/tmp/master.zip
+```
