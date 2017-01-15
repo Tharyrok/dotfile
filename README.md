@@ -79,6 +79,18 @@ home	/dev/mapper/root-home		/etc/luks-keys/home
 ```
 
 ### Créate environement
+
+Edit sudo
+
+Add user : 
+```
+useradd -g users -G sys,disk,wheel,uucp,video,audio,optical,storage,input,power -m Tharyrok
+passwd tharyrok
+su -l tharyrok
 ```
 
+### Install pacaur and all package
+
+```
+curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash
 ```
