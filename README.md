@@ -1,13 +1,17 @@
 # Install Archlinux Tharyrok
-## Get latest boostrap
+## No chroot
+### Init
+Create partitions before continuing, you may need to restart
+
+### Get latest boostrap
 ```
-wget https://archlinux.cu.be/iso/latest/archlinux-bootstrap-2017.01.01-x86_64.tar.gz -O/tmp/archlinux-bootstrap.tar.gz
+wget -O/tmp/archlinux-bootstrap.tar.gz https://archlinux.cu.be/iso/latest/$(wget -q -O- https://archlinux.cu.be/iso/latest/ | grep -E "archlinux-bootstrap-.*-x86_64.tar.gz</a>" | cut -d'"' -f2)
 cd /tmp
 tar xzf /tmp/archlinux-bootstrap.tar.gz
 
 /tmp/root.x86_64/bin/arch-chroot /tmp/root.x86_64/
 ```
-## Init chroot
+### Init chroot
 ```
 pacman-key --init
 pacman-key --populate archlinux
@@ -15,10 +19,15 @@ pacman-key --populate archlinux
 mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
 sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
 rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+
+pacman -Suy
 ```
 
-## Partition First
+### Partition First
 ```
+pacman -Sy xfsprogs lvm2 cryptsetup
+
+
 pvcreate /dev/sdaX
 vgcreate root /dev/sdaX
 
@@ -31,12 +40,38 @@ lvcreate -l 95%FREE -n home root
 cryptsetup luksFormat -c aes-xts-plain64 -s 512 /dev/mapper/root-lvroot
 cryptsetup open /dev/mapper/root-lvroot root
 
-pacman -Sy xfsprogs
 mkfs.xfs /dev/mapper/root
 
 mount /dev/mapper/root /mnt
 mkdir /mnt/{boot,home}
 
 mount /dev/sdaX /mnt/boot
+```
+
+### Base and base-devel
+```
+pacstrap /mnt base base-devel xfsprogs lvm2 cryptsetup
+```
+
+## chroot
+```
+genfstab -U -p /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+```
+
+### Partition Second
+```
+mkdir -m 700 /etc/luks-keys
+dd if=/dev/random of=/etc/luks-keys/home bs=1 count=256 status=progress
+
+cryptsetup luksFormat -v -s 512 /dev/mapper/root-home /etc/luks-keys/home
+cryptsetup -d /etc/luks-keys/home open /dev/mapper/root-home home
+
+mkfs.xfs /dev/mapper/home
+mount /dev/mapper/home /home
+```
+
+### Créate environement
+```
 
 ```
