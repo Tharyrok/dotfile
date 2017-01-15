@@ -1,0 +1,37 @@
+[Added Associations]
+application/octet-stream=visual-studio-code.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-5DD8TY.desktop;
+message/rfc822=userapp-Thunderbird-5DD8TY.desktop;
+text/plain=visual-studio-code.desktop;
+x-scheme-handler/http=userapp-Firefox-D8Q1TY.desktop;
+x-scheme-handler/https=userapp-Firefox-D8Q1TY.desktop;
+x-scheme-handler/ftp=userapp-Firefox-D8Q1TY.desktop;
+x-scheme-handler/chrome=userapp-Firefox-D8Q1TY.desktop;
+text/html=userapp-Firefox-D8Q1TY.desktop;
+application/x-extension-htm=userapp-Firefox-D8Q1TY.desktop;
+application/x-extension-html=userapp-Firefox-D8Q1TY.desktop;
+application/x-extension-shtml=userapp-Firefox-D8Q1TY.desktop;
+application/xhtml+xml=userapp-Firefox-D8Q1TY.desktop;
+application/x-extension-xhtml=userapp-Firefox-D8Q1TY.desktop;
+application/x-extension-xht=userapp-Firefox-D8Q1TY.desktop;
+application/x-compressed-tar=org.gnome.FileRoller.desktop;
+application/x-xz-compressed-tar=org.gnome.FileRoller.desktop;
+image/jpeg=eog.desktop;feh.desktop;
+text/x-python=visual-studio-code.desktop;
+application/x-shellscript=visual-studio-code.desktop;
+text/markdown=visual-studio-code.desktop;
+
+[Default Applications]
+x-scheme-handler/mailto=userapp-Thunderbird-5DD8TY.desktop
+message/rfc822=userapp-Thunderbird-5DD8TY.desktop
+x-scheme-handler/http=userapp-Firefox-D8Q1TY.desktop
+x-scheme-handler/https=userapp-Firefox-D8Q1TY.desktop
+x-scheme-handler/ftp=userapp-Firefox-D8Q1TY.desktop
+x-scheme-handler/chrome=userapp-Firefox-D8Q1TY.desktop
+text/html=userapp-Firefox-D8Q1TY.desktop
+application/x-extension-htm=userapp-Firefox-D8Q1TY.desktop
+application/x-extension-html=userapp-Firefox-D8Q1TY.desktop
+application/x-extension-shtml=userapp-Firefox-D8Q1TY.desktop
+application/xhtml+xml=userapp-Firefox-D8Q1TY.desktop
+application/x-extension-xhtml=userapp-Firefox-D8Q1TY.desktop
+application/x-extension-xht=userapp-Firefox-D8Q1TY.desktop

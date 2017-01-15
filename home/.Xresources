@@ -1,0 +1,65 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #393939, #393939, #268bd2
+rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
+rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
+rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
+
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+URxvt*scrollBar:        false
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+
+URxvt*inheritPixmap: true
+URxvt*transparent: true
+! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*shading: 10
+
+/* fonts */
+URxvt.font:         xft:Hack-Regular:pixelsize=14,xft:Symbola
+URxvt.boldFont:     xft:Hack-Bold:pixelsize=14:weight=bold,xft:Symbola
+URxvt.italicFont: xft:Hack-RegularOblique:pixelsize=14:slant=italic,xft:Symbola
+
+xft:Hack:medium:size=10
+! tango color  scheme
+
+URxvt*background: #2B2B2B
+URxvt*foreground: #DEDEDE
+
+URxvt*colorUL: #86a2b0
+
+! black
+URxvt*color0  : #2E3436
+URxvt*color8  : #555753
+! red
+URxvt*color1  : #CC0000
+URxvt*color9  : #EF2929
+! green
+URxvt*color2  : #4E9A06
+URxvt*color10 : #8AE234
+! yellow
+URxvt*color3  : #C4A000
+URxvt*color11 : #FCE94F
+! blue
+URxvt*color4  : #3465A4
+URxvt*color12 : #729FCF
+! magenta
+URxvt*color5  : #75507B
+URxvt*color13 : #AD7FA8
+! cyan
+URxvt*color6  : #06989A
+URxvt*color14 : #34E2E2
+! white
+URxvt*color7  : #D3D7CF
+URxvt*color15 : #EEEEEC

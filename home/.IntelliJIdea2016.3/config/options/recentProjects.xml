@@ -1,0 +1,66 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/developpement/neutrinet/hypercube" />
+        <option value="$USER_HOME$/developpement/neutrinet/check_ipv4_cert" />
+        <option value="$USER_HOME$/Développement/neutrinet/check_ipv4_cert" />
+        <option value="$USER_HOME$/Développement/neutrinet/website" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/developpement/neutrinet/hypercube" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/developpement/neutrinet/hypercube" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Développement/neutrinet/check_ipv4_cert">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483978683725" />
+              <option name="buildTimestamp" value="1482328075208" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Développement/neutrinet/website">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1483978679031" />
+              <option name="buildTimestamp" value="1482328075208" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/developpement/neutrinet/check_ipv4_cert">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484330908029" />
+              <option name="buildTimestamp" value="1482328042299" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/developpement/neutrinet/hypercube">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484330986425" />
+              <option name="buildTimestamp" value="1482328042299" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,8 @@
+[commit]
+	gpgsign = true
+[user]
+	signingkey = C28FCECA3BE0D472
+	name = Tharyrok
+	email = dev@tharyrok.eu
+[core]
+	editor = nano

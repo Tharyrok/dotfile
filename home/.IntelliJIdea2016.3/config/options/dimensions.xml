@@ -1,0 +1,16 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.1920.1024.1920.1080" x="960" y="230" />
+    <location key="FileChooserDialogImpl.0.1024.1920.1080" x="731" y="1153" />
+    <location key="NewModule_or_Project.wizard.0.1024.1920.1080" x="498" y="1104" />
+    <location key="com.intellij.ide.util.TipDialog.1920.1024.1920.1080" x="2591" y="1361" />
+    <location key="FileChooserDialogImpl.1920.1024.1920.1080" x="2663" y="1297" />
+    <location key="SettingsEditor.1920.1024.1920.1080" x="2349" y="1198" />
+    <location key="CommitChangelistDialog2.1920.1024.1920.1080" x="2471" y="1098" />
+    <size key="FileChooserDialogImpl.0.1024.1920.1080" width="449" height="610" />
+    <size key="NewModule_or_Project.wizard.0.1024.1920.1080" width="916" height="707" />
+    <size key="FileChooserDialogImpl.1920.1024.1920.1080" width="426" height="493" />
+    <size key="SettingsEditor.1920.1024.1920.1080" width="1054" height="692" />
+    <size key="CommitChangelistDialog2.1920.1024.1920.1080" width="809" height="891" />
+  </component>
+</application>
