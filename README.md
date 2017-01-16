@@ -148,4 +148,9 @@ EndSection
 
 ```
 wget https://github.com/Tharyrok/dotfile/archive/master.zip -O/tmp/master.zip
+
+
 ```
+https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-75308.jpg
+https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-154037.jpg
+https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-72207.jpg
