@@ -1,12 +1,10 @@
 corebird
 cower
-gist-git
 git-crypt
 google-chrome
 hotshots
 intellij-idea-ultimate-edition
 libqxt
-multimc5
 numix-cursor-theme-git
 numix-icon-theme-git
 obkey
@@ -15,7 +13,6 @@ paper-gtk-theme-git
 paper-icon-theme-git
 pgadmin4
 playerctl
-plist-gist
 spotify
 ttf-font-awesome
 virtualbox-ext-oracle
